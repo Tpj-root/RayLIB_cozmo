@@ -1,0 +1,15 @@
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/basic_0.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/basic_1.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/basic_3.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/basic_4.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/basic_5.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/basic_6.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/basic_7.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/8_basic.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/9_basic.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/10_basic.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/11_basic.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/12_basic.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/13_basic.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/edit_cache.dir
+/home/when/Desktop/MY_GIT/RayLIB_cozmo/Basic_0/build/CMakeFiles/rebuild_cache.dir

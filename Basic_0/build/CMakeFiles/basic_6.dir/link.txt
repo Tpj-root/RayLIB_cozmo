@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/basic_6.dir/link.d CMakeFiles/basic_6.dir/main_6.cpp.o -o basic_6   -L/home/when/Desktop/BUILD_FILES/raylib/build/raylib  -Wl,-rpath,/home/when/Desktop/BUILD_FILES/raylib/build/raylib -lraylib -lm -lpthread -ldl -lrt

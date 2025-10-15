@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(Cozmo)
+project(cozmo)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -8,12 +8,12 @@ include_directories(/home/when/Desktop/BUILD_FILES/raylib/build/raylib/include)
 link_directories(/home/when/Desktop/BUILD_FILES/raylib/build/raylib)
 
 # Source files
-add_executable(Cozmo
+add_executable(cozmo
     main.cpp
 )
 
 # Link raylib
-target_link_libraries(Cozmo
+target_link_libraries(cozmo
     raylib
     m
     pthread

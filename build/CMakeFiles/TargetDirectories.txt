@@ -1,3 +1,0 @@
-/home/when/Desktop/BUILD_FILES/cozmo/build/CMakeFiles/Cozmo.dir
-/home/when/Desktop/BUILD_FILES/cozmo/build/CMakeFiles/edit_cache.dir
-/home/when/Desktop/BUILD_FILES/cozmo/build/CMakeFiles/rebuild_cache.dir

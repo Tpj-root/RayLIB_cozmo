@@ -51,42 +51,57 @@ public:
         Vector2 BR = { centerX + cfg.OffsetX + cfg.Width / 2 - rBottom,
                        centerY + cfg.OffsetY + cfg.Height / 2 - rBottom + delta_y_bottom };
 
-        // Top line
+        // Edges
         DrawLineV(TL, TR, color);
-
-        // Bottom line
         DrawLineV(BL, BR, color);
+        DrawLineV(TL, BL, color);
+        DrawLineV(TR, BR, color);
 
-        // Vertical lines
-        Vector2 TL_side = {TL.x - rTop, TL.y};
-        Vector2 BL_side = {BL.x - rBottom, BL.y};
-        DrawLineV(TL_side, BL_side, color);
+// Rounded corners
+// Wire
+       if (rTop > 0) { 
+           DrawCircleLines(TL.x, TL.y, rTop, color); 
+           DrawCircleLines(TR.x, TR.y, rTop, color); }
+       if (rBottom > 0) { 
+           DrawCircleLines(BL.x, BL.y, rBottom, color); 
+           DrawCircleLines(BR.x, BR.y, rBottom, color); }
+// Wire
+// Top slope triangle
+       if (cfg.Slope_Top != 0) {
+           Vector2 apex = {(TL.x + TR.x) / 2, TL.y - cfg.Slope_Top * cfg.Height};
+           DrawTriangleLines(TL, TR, apex, color);
+       }
 
-        Vector2 TR_side = {TR.x + rTop, TR.y};
-        Vector2 BR_side = {BR.x + rBottom, BR.y};
-        DrawLineV(TR_side, BR_side, color);
+       // Bottom slope triangle
+       if (cfg.Slope_Bottom != 0) {
+           Vector2 apex = {(BL.x + BR.x) / 2, BL.y + cfg.Slope_Bottom * cfg.Height};
+           DrawTriangleLines(BL, BR, apex, color);
 
-        // Rounded corners
-        if (rTop > 0) {
-            DrawCircleSector(TL, rTop, 180, 270, 0, color); // Top-left corner
-            DrawCircleSector(TR, rTop, 270, 360, 0, color); // Top-right corner
-        }
-        if (rBottom > 0) {
-            DrawCircleSector(BL, rBottom, 90, 180, 0, color); // Bottom-left corner
-            DrawCircleSector(BR, rBottom, 0, 90, 0, color); // Bottom-right corner
-        }
+       }
 
-        // Top slope triangle
-        if (cfg.Slope_Top != 0) {
-            Vector2 apex = {(TL.x + TR.x) / 2, TL.y - cfg.Slope_Top * cfg.Height};
-            DrawTriangleLines(TL, TR, apex, color);
-        }
+        //     // Solid
+        // if (rTop > 0) { 
+        //     DrawCircle(TL.x, TL.y, rTop, color); 
+        //     DrawCircle(TR.x, TR.y, rTop, color); 
+        // }
+        // if (rBottom > 0) { 
+        //     DrawCircle(BL.x, BL.y, rBottom, color); 
+        //     DrawCircle(BR.x, BR.y, rBottom, color); 
+        // }
 
-        // Bottom slope triangle
-        if (cfg.Slope_Bottom != 0) {
-            Vector2 apex = {(BL.x + BR.x) / 2, BL.y + cfg.Slope_Bottom * cfg.Height};
-            DrawTriangleLines(BL, BR, apex, color);
-        }
+        //     // Solid
+
+        // if (cfg.Slope_Top != 0) {
+        //     Vector2 apex = {(TL.x + TR.x) / 2, TL.y - cfg.Slope_Top * cfg.Height};
+        //     DrawTriangle(TL, TR, apex, color); // filled
+        // }
+        // if (cfg.Slope_Bottom != 0) {
+        //     Vector2 apex = {(BL.x + BR.x) / 2, BL.y + cfg.Slope_Bottom * cfg.Height};
+        //     DrawTriangle(BL, BR, apex, color); // filled
+        // }
+        
+
+
     }
 };
 
